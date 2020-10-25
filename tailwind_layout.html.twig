@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block button_widget -%}
-    {%- if attr.forgotten is same as(true) -%}
+    {%- if attr.forgotten is sameas(true) -%}
         <div class="flex items-center justify-between">
             {%- set attr = attr|merge({class: (attr.class|default('bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'))|trim}) -%}
             {{- parent() -}}
